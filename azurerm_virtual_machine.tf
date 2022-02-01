@@ -73,7 +73,7 @@ resource "azurerm_windows_virtual_machine" "demo-vm" {
    admin_username      = "user1"
    admin_password      = "Divyauser@1234"
    network_interface_ids = [azurerm_network_interface.demointerface1.id]
-   #public_ip_address = azurerm_public_ip.public1demo.id
+   public_ip_address = azurerm_public_ip.public1demo.id
 
 os_disk {
   caching = "ReadWrite"
