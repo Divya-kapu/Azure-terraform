@@ -18,7 +18,7 @@ resource "azurerm_network_security_group" "demosecuritygroup1" {
      protocol = "tcp"
      source_port_range = "22"
      destination_port_range = "*"
-     source_address_prefix = "VirtualNetwork"
+     source_address_prefix = "0.0.0.0/0"
      destination_address_prefix = "VirtualNetwork"
     }
 }
