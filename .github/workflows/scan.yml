@@ -29,9 +29,6 @@ jobs:
     - name: Install golint
       run: go get -u golang.org/x/lint/golint
 
-    - name: Build Terrascan docker image
-      run: make docker-build
-
     - name: Go validations
       run: make validate
 
