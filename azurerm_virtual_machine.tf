@@ -70,8 +70,8 @@ resource "azurerm_windows_virtual_machine" "demo-vm" {
    encryption_at_host_enabled = true
    enable_automatic_updates = true
    size                = "Standard_F2"
-   admin_username      = "user1"
-   admin_password      = "Divyauser@1234"
+   admin_username      = "u"
+   admin_password      = "P@1290I^&!90"
    network_interface_ids = [azurerm_network_interface.demointerface1.id]
    #public_ip_address = azurerm_public_ip.public1demo.id
 
